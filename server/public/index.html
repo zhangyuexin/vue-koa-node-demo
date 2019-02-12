@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="如果看完本文后，还对进程线程傻傻分不清，不清楚浏览器多进程、浏览器内核多线程、JS单线程、JS运行机制的区别。那么请回复我，一定是我写的还不够清晰，我来改。。。" />
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  mmp
+  <script>
+    $.ajax({
+      url:'http://localhost:2019/list',
+      type:'get',
+      data:{
+        name:'zhang',
+        age:"25"
+      }
+    }).done(function(res){
+      console.log(res)
+    })
+  </script>
+</body>
+</html>
